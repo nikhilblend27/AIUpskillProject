@@ -1,0 +1,28 @@
+{
+  "description": "Hand-labelled golden dataset for the NewsFilterAgent. 'expected_relevant' is the ground truth; cases 11-20 are deliberately borderline.",
+  "version": "1.1",
+  "created": "2026-11-19",
+  "relevance_threshold": 6,
+  "test_cases": [
+    {"id": 1, "title": "GPT-4 Released by OpenAI", "summary": "OpenAI announces GPT-4, their most advanced language model with improved reasoning and multimodal capabilities.", "expected_relevant": true, "expected_score": 10, "reason": "Core AI/ML development"},
+    {"id": 2, "title": "New JavaScript Framework Released", "summary": "Vue.js 4 brings improved performance and better TypeScript support.", "expected_relevant": false, "expected_score": 1, "reason": "Web development, not AI"},
+    {"id": 3, "title": "Machine Learning in Healthcare Breakthrough", "summary": "Researchers use deep learning to predict disease outcomes with 95% accuracy.", "expected_relevant": true, "expected_score": 9, "reason": "ML application in important domain"},
+    {"id": 4, "title": "Docker 25 Released", "summary": "Container platform adds new features for developers.", "expected_relevant": false, "expected_score": 2, "reason": "DevOps, not directly AI"},
+    {"id": 5, "title": "Stable Diffusion 3.0 Improves Image Generation", "summary": "New version of text-to-image model produces more realistic results.", "expected_relevant": true, "expected_score": 10, "reason": "Core AI/generative models"},
+    {"id": 6, "title": "PostgreSQL 16 Features", "summary": "Database adds JSON improvements and performance enhancements.", "expected_relevant": false, "expected_score": 1, "reason": "Database, not AI"},
+    {"id": 7, "title": "Neural Network Optimizes Traffic Flow", "summary": "City implements AI system to reduce congestion by 30%.", "expected_relevant": true, "expected_score": 8, "reason": "AI application in real-world problem"},
+    {"id": 8, "title": "Recipe for Perfect Pizza Dough", "summary": "Chef shares secret technique for crispy crust.", "expected_relevant": false, "expected_score": 0, "reason": "Food/cooking, not AI"},
+    {"id": 9, "title": "Transformer Architecture Explained", "summary": "Deep dive into attention mechanisms and self-attention in modern NLP models.", "expected_relevant": true, "expected_score": 9, "reason": "Core AI/ML architecture"},
+    {"id": 10, "title": "AI Ethics Guidelines Published", "summary": "Organization releases framework for responsible AI development.", "expected_relevant": true, "expected_score": 7, "reason": "AI governance and ethics"},
+    {"id": 11, "title": "Nvidia unveils next-generation data center GPU", "summary": "The new chip targets large-scale model training and inference workloads with doubled memory bandwidth.", "expected_relevant": true, "expected_score": 8, "reason": "AI infrastructure — hardware built for model training"},
+    {"id": 12, "title": "Smart fridge now has an 'AI' button", "summary": "The appliance maker added a button labelled AI that suggests a default cooling mode.", "expected_relevant": false, "expected_score": 3, "reason": "AI marketing label, no substantive AI content"},
+    {"id": 13, "title": "EU finalises rules for general-purpose AI models", "summary": "Regulators publish compliance obligations for providers of large foundation models.", "expected_relevant": true, "expected_score": 8, "reason": "AI policy and regulation"},
+    {"id": 14, "title": "Rust 2.0 roadmap announced", "summary": "The language team outlines plans for async improvements and a new edition.", "expected_relevant": false, "expected_score": 1, "reason": "General programming language news"},
+    {"id": 15, "title": "Building a RAG chatbot over your company docs", "summary": "Tutorial on retrieval-augmented generation with embeddings, a vector store and an LLM.", "expected_relevant": true, "expected_score": 8, "reason": "Applied LLM engineering"},
+    {"id": 16, "title": "Kubernetes 1.40 adds sidecar improvements", "summary": "The release focuses on pod lifecycle and networking changes.", "expected_relevant": false, "expected_score": 1, "reason": "DevOps / infrastructure, no AI angle"},
+    {"id": 17, "title": "Open-source speech recognition model beats Whisper", "summary": "A new multilingual ASR model reports lower word error rates on standard benchmarks.", "expected_relevant": true, "expected_score": 9, "reason": "Speech AI model release"},
+    {"id": 18, "title": "Critical vulnerability found in OpenSSL", "summary": "Maintainers urge users to patch a remote code execution bug immediately.", "expected_relevant": false, "expected_score": 1, "reason": "Security news, not AI"},
+    {"id": 19, "title": "Self-driving startup expands robotaxi service", "summary": "The company's vision-based autonomous vehicles now operate in three more cities.", "expected_relevant": true, "expected_score": 7, "reason": "Computer vision / autonomy application"},
+    {"id": 20, "title": "Smartphone review: best battery life of the year", "summary": "The new handset lasts two days and has a brighter display.", "expected_relevant": false, "expected_score": 1, "reason": "Consumer gadget review, no AI focus"}
+  ]
+}

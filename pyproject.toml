@@ -1,0 +1,29 @@
+[project]
+name = "ai-upskill-news-pipeline"
+version = "1.0.0"
+description = "Blend AI Upskill Project — async fetchers, SOLID design, LLM agents, MCP and evaluation"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+markers = [
+    "network: hits real public APIs (deselect with -m 'not network')",
+    "llm: calls the configured LLM and costs tokens (deselect with -m 'not llm')",
+]
+addopts = "-m 'not network and not llm'"
+filterwarnings = ["ignore:'count' is passed as positional argument:DeprecationWarning:feedparser"]
+
+[tool.coverage.run]
+source = ["src"]
+omit = ["src/mcp_servers/hello_server.py", "src/mcp_servers/simple_client.py"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+extend-exclude = ["venv"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "W"]
+ignore = ["E501", "UP038"]  # UP038 is deprecated upstream (X | Y in isinstance is slower)
